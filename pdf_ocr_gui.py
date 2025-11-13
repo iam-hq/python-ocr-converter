@@ -6,7 +6,7 @@ import os
 from pathlib import Path
 from plyer import notification
 
-from pdf_ocr_searchable import (
+from pdf_ocr_cli import (
     process_single_pdf,
     check_dependencies,
     list_input_files,
