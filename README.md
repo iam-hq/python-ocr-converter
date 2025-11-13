@@ -110,7 +110,7 @@ python pdf_ocr_gui.py
 
 Run the command-line version:
 ```bash
-python pdf_ocr_searchable.py input_file_or_folder [options]
+python pdf_ocr_cli.py input_file_or_folder [options]
 ```
 
 #### Command Line Options:
@@ -137,17 +137,17 @@ options:
 
 Process a single PDF:
 ```bash
-python pdf_ocr_searchable.py document.pdf
+python pdf_ocr_cli.py document.pdf
 ```
 
 Batch process with text output:
 ```bash
-python pdf_ocr_searchable.py folder_with_pdfs --batch --txt
+python pdf_ocr_cli.py folder_with_pdfs --batch --txt
 ```
 
 High-quality OCR with custom language:
 ```bash
-python pdf_ocr_searchable.py document.pdf --dpi 600 --lang eng+fra
+python pdf_ocr_cli.py document.pdf --dpi 600 --lang eng+fra
 ```
 
 ## Configuration
@@ -178,7 +178,7 @@ To install additional languages:
 ```
 PythonOCR/
 ├── pdf_ocr_gui.py              # GUI application
-├── pdf_ocr_searchable.py       # Command-line tool and core logic
+├── pdf_ocr_cli.py       # Command-line tool and core logic
 ├── requirements.txt            # Python dependencies
 ├── test.py                     # Simple test file
 ├── README.md                   # This file
